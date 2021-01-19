@@ -1,4 +1,4 @@
-# CHAPTER 05 - FILLING IN LAYOUT
+# CHAPTER 06 - MOdeling Users
 
 # Ruby on Rails Tutorial sample application
 

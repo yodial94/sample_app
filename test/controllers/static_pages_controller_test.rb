@@ -26,4 +26,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
   end
+
+  test "should get news" do
+    get news_path
+    assert_response :success
+    assert_select "title", "News | Ruby on Rails Tutorial Sample App"
+  end
 end

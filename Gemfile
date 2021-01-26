@@ -3,9 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
-source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
 gem 'rails',      '6.1.0'
 gem 'bcrypt',     '3.1.13'
 gem 'bootstrap-sass', '3.4.1'

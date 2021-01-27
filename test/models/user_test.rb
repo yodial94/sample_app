@@ -9,17 +9,17 @@ class UserTest < ActiveSupport::TestCase
 
   test "should be valid" do
 		assert @user.valid?
- end
+  end
 
   test "name should be present" do
-  	@user.name = "a" * 51
+   	@user.name = " " * 51
 		assert_not @user.valid?
- end 
+  end 
 
   test "email should be present" do
-  	@user.email = "a" * 244 + "@example.com"
+  	@user.email = " " * 244 + "@example.com"
 		assert_not @user.valid?
- end 
+  end 
 
   test "email validation should accept valid addresses" do
     valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
